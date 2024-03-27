@@ -1,0 +1,59 @@
+html * { 
+    font-family: 'Inter', sans-serif !important; 
+}
+@supports (font-variation-settings: normal) {
+  html * { 
+    font-family: 'Inter var', sans-serif !important; 
+}
+}
+
+input:invalid {
+    outline: none !important;
+}
+
+input::placeholder {
+    font-weight: normal;
+}
+
+.marks-allocation-txt {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.rubric-delete-button:hover {
+    color: red;
+}
+
+.rubric-edit-button:hover {
+    color: blue;
+}
+
+.rubric-edit-done-button:hover {
+    color: green;
+}
+
+@media only screen and (max-width: 1500px) {
+    #grading-navbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #files-navbar {
+        display: none;
+    }
+}
+
+#number-questions-input-label, #overall-score-input-label, #question-select-label, #question-score-input-label {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#page-question-number, #page-max-score {
+    font-weight: bold;
+}
